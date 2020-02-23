@@ -1,9 +1,10 @@
 fn main() {
-    println!("Hello, world!");
+    let _x = 5;
 
-    another_function(5, 6);
-}
+    let y = {
+        let _x = 3;
+        _x + 1
+    };
 
-fn another_function(x: i32, y: i32) {
-    println!("The values of x, y are: {}, {}", x, y);
+    println!("The value of y is: {}", y);
 }
